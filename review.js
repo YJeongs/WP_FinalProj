@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
-<style type="text/css">
-    body{
-        text-align: center;
-    }
-    #t1, div {
-	    border: 1px solid black;
-        text-align: center;
-        width: 100%;
-    }
-    h2{
-        text-align: center;
-    }
-
-    tr{
-        width: 100%;
-    }
-  
-   
-</style>
-<!-- <script>
-
-	let cnt = 1;
+let cnt = 1;
 	function a() {
 		let writer = f.writer.value;
 		let pwd = f.pwd.value;
@@ -93,57 +67,3 @@
 			alert("글 비밀번호 불일치. 삭제취소");
 		}
 	}
-</script> -->
-</head>
-<body>
-    <hr>
-    <div >
-        <h2>My Review</h2>
-    </div>
-    <hr>
-	<h3>리뷰 작성</h3>
-	<form name="f">
-		<table id="t1">
-			<tr>
-				<th>작성자</th>
-				<td><input type="text" name="writer" id="writer" ></td>
-			</tr>
-			<tr>
-				<th>글 비밀번호</th>
-				<td><input type="password" name="pwd" id="pwd"></td>
-			</tr>
-			<tr>
-				<th>내용</th>
-				<td><input type="text" name="content" id="content" ></td>
-			</tr>
-			<tr>
-				<th>작성</th>
-				<td><input type="button" value="작성" onclick="a()"></td>
-			</tr>
-		</table>
-	</form>
-	<div id="list"></div>
-	<!-- 수정폼 -->
-	<table id="editf" style="display: none;">
-		<tr>
-			<th>작성자</th>
-			<td><input type="text" name="editwriter" id="editwriter"></td>
-		</tr>
-		<tr>
-			<th>글 비밀번호</th>
-			<td><input type="password" name="editpwd" id="editpwd"></td>
-		</tr>
-		<tr>
-			<th>내용</th>
-			<td><input type="text" name="editcontent" id="editcontent"></td>
-		</tr>
-		<tr>
-			<th>수정완료</th>
-			<td><input type="button" value="수정완료" id="editbtn"
-				onclick="edit()"> <input type="button" value="취소"
-				onclick="cancel()"></td>
-		</tr>
-	</table>
-	<script src="review.js"></script>
-</body>
-</html>
