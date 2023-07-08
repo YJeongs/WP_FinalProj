@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        } 
+        .submit {
+            border: 2px solid #9DD1F1;
+            padding: 50px;
+        }
+    </style>
+    <!-- <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var name = document.getElementById('id').value;
+            var age = document.getElementById('age').value;
+            var password = document.getElementById('pw').value;
+            var tripValue = '';
+            
+            var checkboxes = document.getElementsByName('check');
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    tripValue += checkboxes[i].value + ' ';
+                }
+            }
+          });
+      });
+    </script> -->
+</head>
+<body>
+    <div>
+        <hr>
+        <form action="submission.html">
+            <h1>회원가입</h1>
+            <section>
+              <label>아이디를 입력해주세요.</label>
+              <input type="text" name="id" id="id">
+            </section>
+            <hr>
+            
+            <section>
+              <label>나이를 입력해주세요.</label>
+              <input type="number" name="age" id="age">
+            </section>
+            <hr>
+    
+            <section>
+                <label>비밀번호를 입력해주세요.</label>
+                <input type="password" name="pw" id="pw">
+              </section>
+              <hr>
+            
+            <section class="trip">
+              <span>일년에 여행을 몇번정도 가나요?</span>
+              <br>
+              <input type="checkbox" name="check" id="five">
+              <label >5번 이하</label>
+              <input type="checkbox" name="check" id="ten">
+              <label >10번 이상</label>
+              <input type="checkbox" name="check" id="tenten">
+              <label >20번 이상</label>
+            </section>
+            <hr>
+            <section class="submission">
+                <input type="submit" value="Submit">
+            </section>
+          </form>
+    </div>
+</body>
+</html>
